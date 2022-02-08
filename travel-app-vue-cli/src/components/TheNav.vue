@@ -7,4 +7,3 @@
     <router-link to="/jamaica">Jamaica</router-link>
   </div>
 </template>
-  

@@ -8,24 +8,9 @@ const routes = [
     component: Home,
   },
   {
-    path:"/brazil",
-    name:"Brazil",
-    component: () => import(/* webpackChunkName: 'brazil' */"../views/PageBrazil.vue")
-  },
-  {
-    path:"/panama",
-    name:"Panama",
-    component: () => import(/* webpackChunkName: 'panama' */"../views/PagePanama.vue")
-  },
-  {
-    path:"/hawaii",
-    name:"Hawaii",
-    component: () => import(/* webpackChunkName: 'hawaii' */"../views/PageHawaii.vue")
-  },
-  {
-    path:"/Jamaica",
-    name:"Jamaica",
-    component: () => import(/* webpackChunkName: 'jamaica' */"../views/PageJamaica.vue")
+    path:"/destination/:id/:slug",
+    name:"destination.show",
+    component: () => import(/* webpackChunkName: 'Destination' */"../views/DestinationShow.vue")
   }
 ];
 

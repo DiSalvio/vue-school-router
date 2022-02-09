@@ -11,12 +11,12 @@
 <script>
 import sourceData from "@/data.json"
 export default {
+  props: {
+    id: {type: Number, required: true}
+  },
   computed: {
-    destinationId() {
-      return parseInt(this.$route.params.id)
-    },
     destination() {
-      return sourceData.destinations.find(d => d.id === this.destinationId)
+      return sourceData.destinations.find(d => d.id === this.id)
     }
   },
 }

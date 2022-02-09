@@ -18,6 +18,7 @@
             />
         </router-link>
       </div>
+      <router-view/>
     </section>
   </section>
 </template>

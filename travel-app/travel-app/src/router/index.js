@@ -50,6 +50,10 @@ const router = createRouter({
         return savedPosition || new Promise((resolve) => {
           setTimeout(()=> resolve({top:0, behavior: 'smooth'}), 300)
         })
+      } else {
+        return savedPosition || new Promise((resolve) => {
+          setTimeout(()=> resolve({el:'.experience', behavior: 'smooth'}), 350)
+        })
       }
     }
 })

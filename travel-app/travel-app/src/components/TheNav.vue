@@ -1,14 +1,15 @@
 <template>
   <div id="nav">
-    <router-link id="logo" to="/"><img class="home-logo" src="/src/assets/logo.png" alt="Home"></router-link>
-    <router-link
+    <AppLink id="logo" to="/"><img class="home-logo" src="/src/assets/logo.png" alt="Home"></AppLink>
+    <AppLink
       v-for="destination in destinations"
       :key="destination.id"
       :to="{name: 'destination.show', params:{id: destination.id, slug: destination.slug}}"
     >
       {{destination.name}}
-    </router-link>
-    <router-link :to="{name: 'protected'}">Protected</router-link>
+    </AppLink>
+    <AppLink :to="{name: 'protected'}">Protected</AppLink>
+    <AppLink to="https://vueschool.io">Vue School</AppLink>
   </div>
 </template>
 

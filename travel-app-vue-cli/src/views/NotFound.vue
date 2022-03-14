@@ -3,7 +3,7 @@
     <h1>404 Not Found</h1>
     <p>
       Where you're going you don't need routes.
-      <router-link to="/">Home</router-link>
+      <AppLink to="/">Home</AppLink>
     </p>
   </div>
 </template>

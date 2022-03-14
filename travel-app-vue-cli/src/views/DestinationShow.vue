@@ -10,7 +10,7 @@
       <section class="experiences">
         <h3>Top Experiences in {{destination.name}}</h3>
         <div class="cards">
-          <router-link
+          <AppLink
             v-for="experience in destination.experiences"
             :key="experience.slug"
             :to="{name: 'experience.show', params:{experienceSlug: experience.slug}}"
@@ -18,7 +18,7 @@
               <experience-preview
               :experience="experience"
               />
-          </router-link>
+          </AppLink>
         </div>
         <router-view/>
       </section>

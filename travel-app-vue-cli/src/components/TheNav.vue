@@ -1,14 +1,14 @@
 <template>
   <div id="nav">
-    <router-link id="logo" to="/"><img class="home-logo" src="/images/logo.png" alt="Home"></router-link>
-    <router-link
+    <AppLink id="logo" to="/"><img class="home-logo" src="/images/logo.png" alt="Home"></AppLink>
+    <AppLink
        v-for="destination in destinations"
        :key="destination.id"
        :to="{name: 'destination.show', params:{id: destination.id, slug: destination.slug}}"
      >
      {{ destination.name }}
-    </router-link>
-    <router-link :to="{name: 'protected'}">Protected</router-link>
+    </AppLink>
+    <AppLink :to="{name: 'protected'}">Protected</AppLink>
   </div>
 </template>
 
